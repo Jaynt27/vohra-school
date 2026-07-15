@@ -6,7 +6,6 @@ const dotenv = require("dotenv");
 
 const Teacher = require("./models/teacher");
 
-
 // Load env file
 dotenv.config();
 
