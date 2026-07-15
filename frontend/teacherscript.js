@@ -10,20 +10,21 @@ teacherForm.addEventListener("submit", async (e) => {
             "https://vohra-school.onrender.com/addTeacher",
             {
                 method: "POST",
-                body: formData,
+                body: formData
             }
         );
 
         const result = await response.json();
 
         if (response.ok) {
-            alert(result.message || "Resume uploaded successfully!");
+            alert(result.message);
             teacherForm.reset();
         } else {
-            alert(result.message || "Upload failed!");
+            alert(result.message || "Upload Failed");
         }
+
     } catch (error) {
-        console.error("Error:", error);
+        console.error(error);
         alert("Unable to connect to the server.");
     }
 });
