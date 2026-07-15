@@ -4,7 +4,7 @@ const multer = require("multer");
 const cors = require("cors");
 const dotenv = require("dotenv");
 
-const Teacher = require("./models/Teacher");
+const Teacher = require("./models/teacher");
 
 
 // Load env file
